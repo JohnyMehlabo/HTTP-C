@@ -3,7 +3,7 @@
 
 # A generic build template for C/C++ programs
 
-# LIBcutable name
+# Library name
 LIB = libhttpc.so
 
 # C compiler
