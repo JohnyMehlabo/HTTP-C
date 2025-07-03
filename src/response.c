@@ -73,7 +73,7 @@ uint8_t* serialize_response(const Response* response, size_t* len_out) {
     }
     
     *len_out = pre_body_len + response->body_len;
-    printf("Total size: %d\n", *len_out);
+    // printf("Total size: %d\n", *len_out);
     return buffer;
 }
 

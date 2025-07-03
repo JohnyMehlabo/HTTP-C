@@ -101,7 +101,7 @@ void start_server(HTTPServer* server, uint16_t port) {
             if (server->invalid_route_handler.handler_function != NULL) {
                 handler = server->invalid_route_handler;
             } else {
-                printf("[ERROR] Invalid route and method combination. No matching handler. %s\n", request.route);
+                // printf("[ERROR] Invalid route and method combination. No matching handler. %s\n", request.route);
                 // If there are no matches send error message and close connection
                 send(client_fd, "HTTP/1.1 404\n\nInavlid route. ", 29, 0);
                 close(client_fd);
